@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+
+#contact-form {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    border-radius: 5%;
+    padding: 30px;
+    background-color: blue;
+    column-gap: 10px;
+    grid-template-areas: 
+    "... ... ... ..."
+    "... header header ..."
+    "... nome email ..."
+    "... phone phone ..."
+    "... botao botao ..."
+    "... ... ... ..."
+    ;
+}
+
+/* Form Elements (General) */
+#name-field input,
+#email-field input,
+#phone-field input  {
+    display: block;
+    height: 30px;
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+/* HEADER */
+#header {
+    grid-area: header;
+    width: 100%;
+}
+
+/* FORM */
+#name-field {
+    grid-area: nome;
+    justify-self: start;
+    width: 100%;    
+}
+
+#email-field {
+    grid-area: email;
+    justify-self: end ;
+    width: 100%;
+    
+}
+
+#phone-field {
+    grid-area: phone;
+}
+
+#submit-button,
+#submit-button input {
+    grid-area: botao;
+    justify-self: start;
+    height: 50px;
+    width:100px;
+    border-radius: 10%;
+}

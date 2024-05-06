@@ -1,0 +1,80 @@
+/* General Format */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    display: grid;
+    gap: 0 20px;
+    justify-content: space-evenly;
+    padding: 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image header header"
+    "image form contact-info"
+    ;
+}
+
+/* Main */
+
+#image-id {
+    grid-area: image;
+    height: 500px;
+    width: 300px;
+    border-radius: 5%;
+
+}
+
+#header-id {
+    grid-area: header;
+    justify-self: start;
+}
+
+#form {
+    grid-area: form;
+    display: grid;  
+    row-gap: 5px ;
+    justify-content: start;
+    
+}
+
+#contact-id {
+    grid-area: 'contact-info';
+}
+
+
+/* Forms Format*/
+
+#nome-id,
+#email-id,
+#message-id {
+    grid-area: form;
+    width: 100%;
+    background-color:blanchedalmond;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: pink;
+    border-radius: 5%;
+    
+}
+
+#nome-field input,
+#email-field input,
+#message-field input {
+    justify-self: start;
+    height: 30px;
+}
+
+
+/* Footer*/
+
+footer {
+    display: grid;
+    align-content: center;
+    list-style: none;
+    gap: 20px;
+}
