@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-style: solid;
+    padding: 10px;
+}
+
+form {
+    height: 100%;
+}
+
+#forms {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "... ... ... ..."
+    "... fname lname ..."
+    "... email job ..."
+    "... adress adress ..."
+    "... city zip ..."
+    "... date upload ..."
+    "... button button ..."
+    "... ... ... ..."
+    ;
+}
+
+#fname-field {
+    grid-area: fname;
+}
+
+#lname-field {
+    grid-area: lname;
+}
+
+#email-field {
+    grid-area: email;
+}
+
+#job-field {
+    grid-area: job;
+}
+
+#adress-field {
+    grid-area: adress;
+}
+
+#city-field {
+    grid-area: city;
+}
+
+#zip-field {
+    grid-area: zip;
+}
+
+#date-field {
+    grid-area: date;
+}
+
+#upload-field {
+    grid-area: upload;
+}
+
+#button-field {
+    grid-area: button;
+}

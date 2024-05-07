@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: medium;
+    line-height: normal;
+    color: inherit;
+    background-color: transparent;
+}
+
+body {
+    display: flex;
+    margin: 8px;
+    width: 100%;
+    height:600px;
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    color: initial; 
+    background-color: initial; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#general {
+    display: inline-grid;    
+    border-style: solid;
+    border-radius: 5%;
+}
+
+#form-field {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "... ... ... ..."
+    "... name date ..."
+    "... email message ..."
+    "... phone message ..."
+    "... button button ..."
+    "... ... ... ..."
+    ;
+}
+
+#nome-field {
+    grid-area: name;
+}
+
+#email-field {
+    grid-area: email;
+}
+
+#phone-field {
+    grid-area: phone;
+}
+
+#message-field {
+    grid-area: message;
+}
+
+#date-field {
+    grid-area: date;
+}
+
+#button-field {
+    grid-area: button;
+    justify-self: end;
+}
+
+#nome-field,
+#email-field,
+#phone-field,
+#message-field,
+#date-field {
+    display: flex;
+    flex-direction: column;
+    align-items: start  ;
+
+}

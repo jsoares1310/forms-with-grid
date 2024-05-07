@@ -9,14 +9,19 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     display: grid;
-    gap: 0 20px;
+    
     justify-content: space-evenly;
     padding: 50px;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "image header header"
-    "image form contact-info"
+    grid-template-areas:
+        "image header contact-info"
+        "image form contact-info"
+        
     ;
+}
+
+li {
+    list-style: none;
 }
 
 /* Main */
@@ -31,20 +36,31 @@ body {
 
 #header-id {
     grid-area: header;
-    justify-self: start;
+    justify-self:start;
+    margin-top: 30%;
+    height: fit-content;
 }
 
 #form {
     grid-area: form;
-    display: grid;  
-    row-gap: 5px ;
+    display: grid;
+    row-gap: 5px;
     justify-content: start;
-    
+
 }
 
 #contact-id {
-    grid-area: 'contact-info';
+    display: flex;
+    flex-direction: column;
+    grid-area: contact-info;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    list-style: none;
 }
+
+
 
 
 /* Forms Format*/
@@ -54,12 +70,12 @@ body {
 #message-id {
     grid-area: form;
     width: 100%;
-    background-color:blanchedalmond;
+    background-color: blanchedalmond;
     border: none;
     border-bottom-style: solid;
     border-bottom-color: pink;
     border-radius: 5%;
-    
+
 }
 
 #nome-field input,
@@ -69,12 +85,18 @@ body {
     height: 30px;
 }
 
+/* CONTACT INFO */
 
-/* Footer*/
+#buttom-id {
+    grid-area: form;
+    width: 50%;
+    height: 50%;
+    background-color: blanchedalmond;
+    border-style: dotted;
+    border-radius: 5%;
+    border-color: rgb(231, 127, 127);
+}
 
-footer {
-    display: grid;
-    align-content: center;
-    list-style: none;
-    gap: 20px;
+#buttom-field {
+    align-items: start;
 }

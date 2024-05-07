@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-mockup-3.css">
+    <title>mockup_3.com</title>
+</head>
+<body>
+    <div id="general" aria-label="General">
+        <header>
+            <h1>
+                Book Your Appointment Now
+            </h1>
+            <p>
+                So our team can reach out on you on time
+            </p>
+        </header>
+
+        <form id="form" action="/submit-path" method="post">
+            <div id="form-field" aria-label="Form">
+                <div id="button-field">
+                    <input id="button-id" type="submit" value="Book Now" name="submit">
+                </div>
+                <div id="nome-field">
+                    <label for="nome-id">Full Name</label>
+                    <input id="nome-id" type="text" name="nome" placeholder="Full Name" required>
+                </div>
+                <div id="email-field">
+                    <label for="email-id">Email</label>
+                    <input id="email-id" type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div id="phone-field">
+                    <label for="phone-id">Phone Number</label>
+                    <select name="cc">
+                        <option value="usa">+1</option>
+                        <option value="canada">+1</option>
+                        <option value="brasil">+55</option>
+                    </select>
+                    <input id="phone-id" type="number" name="phone-number" placeholder="Phone Number" required>
+                </div>
+
+                <div id="date-field">
+                    <label for="date-id">Available Date</label>
+                    <select id="date-id" name="cc">
+                        <option value="05/13/24">05/13/24</option>
+                        <option value="05/20/24">05/20/24</option>
+                        <option value="05/28/24">05/28/24</option>
+                    </select>
+                </div>
+                <div id="message-field">
+                    <label for="message-id">Message</label>
+                    <textarea id="message-id" name="message" rows="3" cols="45" placeholder="Message"></textarea>
+                </div>
+            </div>
+            
+       </form>
+    </div>
+</body>
+</html>
